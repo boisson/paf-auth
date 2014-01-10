@@ -1,0 +1,84 @@
+fr:
+  errors:
+    messages:
+      not_found: "ne pas trouvé"
+      already_confirmed: "déjà confirmé"
+      not_locked: "n'était pas bloqué"
+      not_saved:
+        one: "1 erreur interdit %{resource} d'être sauvegardé:"
+        other: "%{count} erreurs interdisent %{resource} d'être sauvegardé:"
+
+  devise:
+    failure:
+      already_authenticated: "Vous êtes déjà connecté."
+      inactive: "Votre compte n'est pas encore activé."
+      invalid: "E-mail ou mot de passe invalide."
+      invalid_token: "Authentication invalide."
+      locked: "Votre compte est bloqué."
+      not_found_in_database: "E-mail ou mot de passe invalide."
+      timeout: "Votre session a expiré. Reconnectez-vous."
+      unauthenticated: "Connectez-vous avant de continuer."
+      unconfirmed: "Confirmez votre compte avant de continuer."
+    sessions:
+      signed_in: 'Connecté.'
+      signed_out: 'Déconnecté.'
+    passwords:
+      no_token: "Sans accès token, vous n'avez pas accès à cette page"
+      send_instructions: 'Dans quelques minutes vous recevrez un é-mail avec des instructions pour réinitialiser votre mote de passe.'
+      updated: 'Votre mot de passe est changé. Vous êtes connecté.'
+      mailer:
+        hello: 'Bonjour %{email}!'
+        info: "Quelqu'un a demandé de changer votre mot de passe. Vous pouvez le faire avec le lien en bas."
+        link: Changez mot de passe
+        ignore_this_email: "Si vous n'avez pas demandé cet e-mail, merci de l'ignorer."
+        info_password_dont_change: "Votre mot de passe ne changera pas jusqu'au moment que vous utiliser le lien."
+      new:
+        title: 'Oublié mot de passe?'
+        submit: 'Envoyez-moi les instructions pour réinitialiser le mot de passe'
+      edit:
+        title: Changez votre mot de passe
+        password_label: Nouveau mot de passe
+        password_confirmation_label: Confirmez nouveau mot de passe
+        submit: Change mon mot de passe
+    confirmations:
+    confirmations:
+      send_instructions: 'Dans quelques minutes vous recevrez un é-mail avec des instructions pour confirmer votre compte.'
+      confirmed: 'Votre compte est confirmé. Vous êtes connecté.'
+    registrations:
+      signed_up: 'Bienvenu! Vous êtes enregistré.'
+      inactive_signed_up: "Vous êtes enregistré. Vous n'êtes pas connecté parce que ton compte est %{reason}."
+      updated: "Votre compte a été mis à jour."
+      destroyed: 'Au revoir! Votre compte a été annulé.'
+    unlocks:
+      send_instructions: 'Dans quelques minutes vous recevrez un é-mail avec des instructions pour débloquer votre compte.'
+      unlocked: 'Votre compte est débloqué. Vous êtes connecté.'
+    oauth_callbacks:
+      success: 'Authorisé de %{kind} compte.'
+      failure: 'Vous ne pouvez pas être authorisé de %{kind} à cause de "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instructions de confirmation'
+      reset_password_instructions:
+        subject: 'Instructions pour réinitialiser mot de passe'
+      unlock_instructions:
+        subject: 'Instructions pour débloquer'
+
+  activerecord:
+    models:
+      'proteste/auth/user': 'Users'
+    attributes:
+      'proteste/auth/user':
+        'blocked': 'Blocked'
+        'trigram': 'Trigram'
+        'name': 'Name'
+        'login': 'Login'
+        'email': 'Email'
+        'active_directory': 'Active directory'
+        'blocked_at': 'Blocked at'
+        'block_user_id': 'Block user'
+        'unblocked_at': 'Unblocked at'
+        'unblock_user_id': 'Unblock user'
+        'company': 'Company'
+        'language': 'Language'
+        applications_with_user_types: 'Applications with user types'
+        groups: 'Groups'

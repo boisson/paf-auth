@@ -1,0 +1,84 @@
+'nl':
+  errors:
+    messages:
+      not_found: "niet gevonden"
+      already_confirmed: "al bevestigd"
+      not_locked: "niet geblokkeerd"
+      not_saved:
+        one: "1 fout verhindert deze %{resource} om bewaard te worden:"
+        other: "%{count} fouten verhinderen deze %{resource} om bewaard te worden:"
+
+  devise:
+    failure:
+      already_authenticated: "Je bent al ingelogd."
+      inactive: "Uw account was nog niet geactiveerd."
+      invalid: "Ongeldig e-mail of paswoord."
+      invalid_token: "Ongeldige authentication token."
+      locked: "Uw account is geblokkeerd."
+      not_found_in_database: "Ongeldig e-mail of paswoord."
+      timeout: "Uw sessie is verlopen, log terug in om verder te doen."
+      unauthenticated: "Je moet inloggen om verder te doen."
+      unconfirmed: "Je moet je account bevestigen vooraleer verder te doen."
+    sessions:
+      signed_in: 'Succesvol ingelogd.'
+      signed_out: 'Succesvol uitgelogd.'
+    passwords:
+      no_token: "Zonder token heb je geen toegang tot deze pagina"
+      send_instructions: 'Binnen enkele minuten zal je een e-mail ontvangen met de instructies om je paswoord te resetten.'
+      updated: 'Je paswoord werd succesvol gewijzigd. Je bent nu ingelogd.'
+      mailer:
+        hello: 'Goeiedag %{email}!'
+        info: "Je hebt gevraagd om je paswoord te wijzigen. Je kan dit doen via de onderstaande link."
+        link: Wijzig mijn paswoord
+        ignore_this_email: "Als jij deze vraag niet gedaan hebt, negeer dan deze e-mail."
+        info_password_dont_change: "Uw paswoord zal niet wijzigen totdat je de link klikt en een nieuw paswoord kiest."
+      new:
+        title: 'Paswoor vergeten?'
+        submit: 'Zend me instructies om mijn paswoord te resetten'
+      edit:
+        title: Wijzig je paswoord
+        password_label: Nieuw paswoord
+        password_confirmation_label: Bevestig nieuw paswoord
+        submit: Wijzig mijn paswoord
+    confirmations:
+    confirmations:
+      send_instructions: 'Binnen enkele minuten zal je een e-mail ontvangen met de instructies hoe je uw account kan bevestigen.'
+      confirmed: 'Uw account was succesvol bevestigd. Je bent nu ingelogd.'
+    registrations:
+      signed_up: 'Welkom! Je bent succesvol aangemeld.'
+      inactive_signed_up: 'Je bent succesvol aangemeld. Je kan echter niet inloggen omdat uw account %{reason} is.'
+      updated: 'Uw account is succesvol gewijzigd.'
+      destroyed: 'Tot ziens! Uw account is succesvol geannuleerd.'
+    unlocks:
+      send_instructions: 'Binnen enkele minuten zal je een e-mail ontvangen met de instructies hoe je uw account kan deblokkeren.'
+      unlocked: 'Uw account werd succesvol gedeblokkeerd. Je bent nu ingelogd.'
+    oauth_callbacks:
+      success: 'Succesvolle authorizatie van %{kind} account.'
+      failure: 'Authorizatie mislukt van %{kind} vanwege "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Instructies bevestiging'
+      reset_password_instructions:
+        subject: 'Instructies reset paswoord'
+      unlock_instructions:
+        subject: 'Instructies deblokkeren'
+
+  activerecord:
+    models:
+      'proteste/auth/user': 'Users'
+    attributes:
+      'proteste/auth/user':
+        'blocked': 'Geblokkeerd'
+        'trigram': 'Trigram'
+        'name': 'Naam'
+        'login': 'Login'
+        'email': 'e-mail'
+        'active_directory': 'Active directory'
+        'blocked_at': 'Geblokkeerd op'
+        'block_user_id': 'Blokkeer gebruiker'
+        'unblocked_at': 'Gedeblokkeerd op'
+        'unblock_user_id': 'Deblokkeer gebruiker'
+        'company': 'Firma'
+        'language': 'Taal'
+        applications_with_user_types: 'Applicaties met gebruikerstypes'
+        groups: 'Groepen'

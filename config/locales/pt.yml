@@ -1,0 +1,83 @@
+'pt':
+  errors:
+    messages:
+      not_found: "não encontrado"
+      already_confirmed: "já foi confirmado"
+      not_locked: "não foi locado"
+      not_saved:
+        one: "1 erro encontrado impossibilitando salvar:"
+        other: "%{count} erros encontrados impossibilitando salvar:"
+
+  devise:
+    failure:
+      already_authenticated: "Você já está logado"
+      inactive: 'Sua conta não foi ativada ainda.'
+      invalid: 'Email ou senha inválida.'
+      invalid_token: 'Autenticação do token inválida.'
+      locked: 'Sua conta está bloqueada.'
+      not_found_in_database: "E-mail ou senha inválida."
+      timeout: 'Sua sessão expirou, por favor logar outra vez para continuar.'
+      unauthenticated: 'Você precisa logar antes de continuar.'
+      unconfirmed: 'Você tem confirmar sua conta antes de continuar.'
+    sessions:
+      signed_in: 'Sucesso ao entrar.'
+      signed_out: 'Sucesso ao sair.'
+    passwords:
+      no_token: 'Sem o token você não poderá acessar está página'
+      send_instructions: 'Você receberá um email com instruções para reiniciar sua senha em alguns minutos.'
+      updated: 'Sua senha foi aceita. Você agora está autenticado as novas informações.'
+      mailer:
+        hello: 'Olá %{email}!'
+        info: "Alguém pediu um link para alterar sua senha. Você pode fazer isso através do link abaixo."
+        link: Alterar minha senha
+        ignore_this_email: "Se você não pediu isso, por favor, ignore este e-mail."
+        info_password_dont_change: "Sua senha não irá mudar até que você acesse o link acima e crie uma nova."
+      new:
+        title: 'Esqueceu sua senha?'
+        submit: 'Enviar instruções para troca de senha'
+      edit:
+        title: Trocar senha
+        password_label: Nova senha
+        password_confirmation_label: Confirmar nova senha
+        submit: Alterar minha senha
+    confirmations:
+      send_instructions: 'Você receberá um email com instruções para reiniciar sua senha em alguns minutos.'
+      confirmed: 'Sua senha foi aceita. Você agora está autenticado.'
+    registrations:
+      signed_up: 'Bem-vindo! Seu login foi feito com sucesso.'
+      inactive_signed_up: 'You have signed up successfully. However, we could not sign you in because your account is %{reason}.'
+      updated: 'Você atualizou sua conta com sucesso.'
+      destroyed: 'Tchau! Você fez o logout com sucesso.'
+    unlocks:
+      send_instructions: 'Você receberá um email com instruções para reiniciar sua senha em alguns minutos.'
+      unlocked: 'Sua conta foi desbloqueada com sucesso. Voce está pronto para logar.'
+    oauth_callbacks:
+      success: 'Autorizado com sucesso.'
+      failure: 'Não foi possível autorizar porque "%{reason}".'
+    mailer:
+      confirmation_instructions:
+        subject: 'Confirmação de instruções'
+      reset_password_instructions:
+        subject: 'Reiniciar as instruções de senha.'
+      unlock_instructions:
+        subject: 'Instruções de desbloqueio'
+
+  activerecord:
+    models:
+      'proteste/auth/user': 'Usuário'
+    attributes:
+      'proteste/auth/user':
+        'blocked': 'Bloqueado'
+        'trigram': 'Trigrama'
+        'name': 'Nome'
+        'login': 'Login'
+        'email': 'Email'
+        'active_directory': 'Active directory'
+        'blocked_at': 'Bloqueado em'
+        'block_user_id': 'Usuário de bloqueio'
+        'unblocked_at': 'Desbloqueado em'
+        'unblock_user_id': 'Usuário de desbloqueio'
+        'company': 'Empresa'
+        'language': 'Linguagem'
+        applications_with_user_types: 'Tipos de usuários'
+        groups: 'Grupos'
