@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_dependency('activemodel')
   spec.add_dependency('actionpack')
-  spec.add_runtime_dependency('ZenTest', '4.8.3')
+  spec.add_runtime_dependency('ZenTest')
   spec.add_runtime_dependency('omniauth')
   spec.add_runtime_dependency('omniauth-oauth2')
 end

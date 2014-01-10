@@ -1,3 +1,3 @@
 module ProtesteAuth
-  VERSION = "0.1.10"
+  VERSION = "0.1.2"
 end
